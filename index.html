@@ -130,6 +130,90 @@ h2 {
 
 }
 
+.filters {
+
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 14px;
+
+    margin: 22px 0 24px 0;
+
+    box-shadow:
+        0 2px 6px
+        rgba(0,0,0,.09);
+
+}
+
+.filter-row {
+
+    display: flex;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+    align-items: end;
+
+}
+
+.filter-control {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+}
+
+.filter-control label {
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    color: #374151;
+
+}
+
+.filter-control input,
+.filter-control select {
+
+    min-width: 155px;
+
+    min-height: 40px;
+
+    border-radius: 8px;
+
+    border:
+        1px solid
+        #d1d5db;
+
+    padding: 8px;
+
+    font-size: 14px;
+
+}
+
+.clear-filter-btn {
+
+    min-height: 40px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #111827;
+
+    color: white;
+
+    padding: 8px 12px;
+
+    cursor: pointer;
+
+}
 
 /* ------------------------
 TILES
@@ -806,7 +890,7 @@ NFL Betting Dashboard
 </h1>
 
 <div class="subtitle">
-Generated 2026-09-16 03:42 PM
+Generated 2026-09-17 12:07 PM
 </div>
 
 
@@ -972,6 +1056,226 @@ Tap any player name to open recent-game and opponent history.
 
 </div>
 
+<div class="filters">
+
+    <div class="filter-row">
+
+        <div class="filter-control">
+
+            <label for="playerSearch">
+                Player Search
+            </label>
+
+            <input
+                type="text"
+                id="playerSearch"
+                placeholder="Type player name..."
+            >
+
+        </div>
+
+        <div class="filter-control">
+
+            <label for="teamFilter">
+                Team
+            </label>
+
+            <select id="teamFilter">
+
+                <option value="ALL">
+                    All Teams
+                </option>
+
+                <option value="ARI">ARI</option>
+<option value="ATL">ATL</option>
+<option value="BAL">BAL</option>
+<option value="BUF">BUF</option>
+<option value="CAR">CAR</option>
+<option value="CHI">CHI</option>
+<option value="CIN">CIN</option>
+<option value="CLE">CLE</option>
+<option value="DAL">DAL</option>
+<option value="DEN">DEN</option>
+<option value="DET">DET</option>
+<option value="GB">GB</option>
+<option value="HOU">HOU</option>
+<option value="IND">IND</option>
+<option value="JAX">JAX</option>
+<option value="KC">KC</option>
+<option value="LA">LA</option>
+<option value="LAC">LAC</option>
+<option value="LV">LV</option>
+<option value="MIA">MIA</option>
+<option value="MIN">MIN</option>
+<option value="NE">NE</option>
+<option value="NO">NO</option>
+<option value="NYG">NYG</option>
+<option value="NYJ">NYJ</option>
+<option value="PHI">PHI</option>
+<option value="PIT">PIT</option>
+<option value="SEA">SEA</option>
+<option value="SF">SF</option>
+<option value="TB">TB</option>
+<option value="TEN">TEN</option>
+<option value="WAS">WAS</option>
+
+            </select>
+
+        </div>
+
+        <div class="filter-control">
+
+            <label for="positionFilter">
+                Position
+            </label>
+
+            <select id="positionFilter">
+
+                <option value="ALL">
+                    All Positions
+                </option>
+
+                <option value="QB">QB</option>
+<option value="RB">RB</option>
+<option value="TE">TE</option>
+<option value="WR">WR</option>
+
+            </select>
+
+        </div>
+
+        <div class="filter-control">
+
+            <label for="weekFilter">
+                Week
+            </label>
+
+            <select id="weekFilter">
+
+                <option value="ALL">
+                    All Weeks
+                </option>
+
+                <option value="2">2</option>
+<option value="3">3</option>
+
+            </select>
+
+        </div>
+
+        <div class="filter-control">
+
+            <label for="betFilter">
+                Bet
+            </label>
+
+            <select id="betFilter">
+
+                <option value="ALL">
+                    All Bets
+                </option>
+
+                <option value="OVER">
+                    Over
+                </option>
+
+                <option value="UNDER">
+                    Under
+                </option>
+
+                <option value="PASS">
+                    Pass
+                </option>
+
+                <option value="NO ODDS">
+                    No Odds
+                </option>
+
+            </select>
+
+        </div>
+
+        <div class="filter-control">
+
+            <label for="marketFilter">
+                Market
+            </label>
+
+            <select id="marketFilter">
+
+                <option value="ALL">
+                    All Markets
+                </option>
+
+                <option value="player_pass_interceptions">Interceptions</option>
+<option value="player_pass_tds">Pass TDs</option>
+<option value="player_pass_yds">Pass Yards</option>
+<option value="player_reception_yds">Receiving Yards</option>
+<option value="player_receptions">Receptions</option>
+<option value="player_rush_yds">Rush Yards</option>
+
+            </select>
+
+        </div>
+
+        <div class="filter-control">
+
+            <label for="bookFilter">
+                Book
+            </label>
+
+            <select id="bookFilter">
+
+                <option value="ALL">
+                    All Books
+                </option>
+
+                <option value="DraftKings">DraftKings</option>
+
+            </select>
+
+        </div>
+
+        <div class="filter-control">
+
+            <label for="gradeFilter">
+                Grade
+            </label>
+
+            <select id="gradeFilter">
+
+                <option value="ALL">
+                    All Grades
+                </option>
+
+                <option value="A">A</option>
+<option value="B">B</option>
+<option value="C">C</option>
+<option value="D">D</option>
+
+            </select>
+
+        </div>
+
+        <div class="filter-control">
+
+            <label>
+                &nbsp;
+            </label>
+
+            <button
+                type="button"
+                id="clearFilters"
+                class="clear-filter-btn"
+            >
+                Clear
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
 
 <h2>
 Week 2 — Best of Best
@@ -40186,7 +40490,6 @@ Full Betting Board
 
 </div>
 
-
 <!-- ======================================================
 PLAYER MODAL
 ======================================================= -->
@@ -40232,7 +40535,6 @@ Player
 </button>
 
 </div>
-
 
 <div class="modal-controls">
 
@@ -40608,7 +40910,6 @@ function populateStatSelect() {
     );
 
 }
-
 
 function renderRecentChart() {
 
@@ -41392,6 +41693,454 @@ document.querySelectorAll(
     }
 );
 
+function filterTables() {
+
+    const playerElement =
+        document.getElementById("playerSearch");
+
+    const playerValue =
+        playerElement
+        ? playerElement.value.toLowerCase()
+        : "";
+
+
+    const teamElement =
+        document.getElementById("teamFilter");
+
+    const teamValue =
+        teamElement
+        ? teamElement.value
+        : "ALL";
+
+
+    const positionElement =
+        document.getElementById("positionFilter");
+
+    const positionValue =
+        positionElement
+        ? positionElement.value
+        : "ALL";
+
+
+    const weekElement =
+        document.getElementById("weekFilter");
+
+    const weekValue =
+        weekElement
+        ? weekElement.value
+        : "ALL";
+
+
+    const betElement =
+        document.getElementById("betFilter");
+
+    const betValue =
+        betElement
+        ? betElement.value
+        : "ALL";
+
+
+    const marketElement =
+        document.getElementById("marketFilter");
+
+    const marketValue =
+        marketElement
+        ? marketElement.value
+        : "ALL";
+
+
+    const bookElement =
+        document.getElementById("bookFilter");
+
+    const bookValue =
+        bookElement
+        ? bookElement.value
+        : "ALL";
+
+
+    const gradeElement =
+        document.getElementById("gradeFilter");
+
+    const gradeValue =
+        gradeElement
+        ? gradeElement.value
+        : "ALL";
+
+
+    document.querySelectorAll(
+        "table.data-table"
+    )
+    .forEach(
+        function(table) {
+
+            const headers =
+                Array.from(
+                    table.querySelectorAll(
+                        "thead th"
+                    )
+                )
+                .map(
+                    function(th) {
+
+                        return th.textContent.trim();
+
+                    }
+                );
+
+
+            const playerIndex =
+                headers.indexOf(
+                    "player_name"
+                );
+
+            const teamIndex =
+                headers.indexOf(
+                    "team"
+                );
+
+            const positionIndex =
+                headers.indexOf(
+                    "position"
+                );
+
+            const weekIndex =
+                headers.indexOf(
+                    "week"
+                );
+
+            const betIndex =
+                headers.indexOf(
+                    "recommended_bet"
+                );
+
+            const marketIndex =
+                headers.indexOf(
+                    "market"
+                );
+
+            const bookIndex =
+                headers.indexOf(
+                    "bookmaker"
+                );
+
+            const gradeIndex =
+                headers.indexOf(
+                    "bet_grade"
+                );
+
+
+            table.querySelectorAll(
+                "tbody tr"
+            )
+            .forEach(
+                function(row) {
+
+                    let show = true;
+
+
+                    if (
+                        playerValue
+                        && playerIndex >= 0
+                    ) {
+
+                        const rowPlayer =
+                            row.children[
+                                playerIndex
+                            ]
+                            .textContent
+                            .toLowerCase();
+
+                        if (
+                            !rowPlayer.includes(
+                                playerValue
+                            )
+                        ) {
+
+                            show = false;
+
+                        }
+
+                    }
+
+
+                    if (
+                        teamValue !== "ALL"
+                        && teamIndex >= 0
+                    ) {
+
+                        const rowTeam =
+                            row.children[
+                                teamIndex
+                            ]
+                            .textContent
+                            .trim();
+
+                        if (
+                            rowTeam !== teamValue
+                        ) {
+
+                            show = false;
+
+                        }
+
+                    }
+
+
+                    if (
+                        positionValue !== "ALL"
+                        && positionIndex >= 0
+                    ) {
+
+                        const rowPosition =
+                            row.children[
+                                positionIndex
+                            ]
+                            .textContent
+                            .trim();
+
+                        if (
+                            rowPosition !== positionValue
+                        ) {
+
+                            show = false;
+
+                        }
+
+                    }
+
+
+                    if (
+                        weekValue !== "ALL"
+                        && weekIndex >= 0
+                    ) {
+
+                        const rowWeek =
+                            row.children[
+                                weekIndex
+                            ]
+                            .textContent
+                            .trim();
+
+                        if (
+                            rowWeek !== weekValue
+                        ) {
+
+                            show = false;
+
+                        }
+
+                    }
+
+
+                    if (
+                        betValue !== "ALL"
+                        && betIndex >= 0
+                    ) {
+
+                        const rowBet =
+                            row.children[
+                                betIndex
+                            ]
+                            .textContent
+                            .trim();
+
+                        if (
+                            rowBet !== betValue
+                        ) {
+
+                            show = false;
+
+                        }
+
+                    }
+
+
+                    if (
+                        marketValue !== "ALL"
+                        && marketIndex >= 0
+                    ) {
+
+                        const rowMarket =
+                            row.children[
+                                marketIndex
+                            ]
+                            .textContent
+                            .trim();
+
+                        if (
+                            rowMarket !== marketValue
+                        ) {
+
+                            show = false;
+
+                        }
+
+                    }
+
+
+                    if (
+                        bookValue !== "ALL"
+                        && bookIndex >= 0
+                    ) {
+
+                        const rowBook =
+                            row.children[
+                                bookIndex
+                            ]
+                            .textContent
+                            .trim();
+
+                        if (
+                            rowBook !== bookValue
+                        ) {
+
+                            show = false;
+
+                        }
+
+                    }
+
+
+                    if (
+                        gradeValue !== "ALL"
+                        && gradeIndex >= 0
+                    ) {
+
+                        const rowGrade =
+                            row.children[
+                                gradeIndex
+                            ]
+                            .textContent
+                            .trim();
+
+                        if (
+                            rowGrade !== gradeValue
+                        ) {
+
+                            show = false;
+
+                        }
+
+                    }
+
+
+                    row.style.display =
+                        show
+                        ? ""
+                        : "none";
+
+                }
+            );
+
+        }
+    );
+
+}
+
+
+function clearDashboardFilters() {
+
+    const ids = [
+
+        "playerSearch",
+        "teamFilter",
+        "positionFilter",
+        "weekFilter",
+        "betFilter",
+        "marketFilter",
+        "bookFilter",
+        "gradeFilter"
+
+    ];
+
+
+    ids.forEach(
+        function(id) {
+
+            const element =
+                document.getElementById(
+                    id
+                );
+
+            if (!element) {
+                return;
+            }
+
+            if (
+                id === "playerSearch"
+            ) {
+
+                element.value = "";
+
+            }
+
+            else {
+
+                element.value = "ALL";
+
+            }
+
+        }
+    );
+
+
+    filterTables();
+
+}
+
+
+[
+    "playerSearch",
+    "teamFilter",
+    "positionFilter",
+    "weekFilter",
+    "betFilter",
+    "marketFilter",
+    "bookFilter",
+    "gradeFilter"
+]
+.forEach(
+    function(id) {
+
+        const element =
+            document.getElementById(
+                id
+            );
+
+        if (!element) {
+            return;
+        }
+
+
+        const eventName =
+            id === "playerSearch"
+            ? "keyup"
+            : "change";
+
+
+        element.addEventListener(
+            eventName,
+            filterTables
+        );
+
+    }
+);
+
+
+const clearFiltersButton =
+    document.getElementById(
+        "clearFilters"
+    );
+
+
+if (clearFiltersButton) {
+
+    clearFiltersButton.addEventListener(
+        "click",
+        clearDashboardFilters
+    );
+
+}
 
 document.querySelectorAll(
     "table.data-table"
